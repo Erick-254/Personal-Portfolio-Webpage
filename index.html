@@ -1,216 +1,185 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- START NAV -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
 
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #020617;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
 
-    <!-- END NAV -->
+    nav a {
+      color: #e2e8f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-    <!-- START WELCOME SECTION -->
+    nav a:hover {
+      color: #38bdf8;
+    }
 
-    <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Erick</h1>
-      <p>a web developer</p>
-    </section>
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
 
-    <!-- END WELCOME SECTION -->
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
 
-    <!-- START PROJECTS SECTION -->
+    .hero p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+    }
 
-    <section id="projects" class="projects-section">
-      <h2 class="projects-section-header">These are some of my projects</h2>
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-      <div class="projects-grid">
-        <a
-          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tribute Page
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Random Quote Machine
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            JavaScript Calculator
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/mVEJag"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Map Data Across the Globe
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/wGqEga"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Wikipedia Viewer
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-            alt="project"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tic Tac Toe Game
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-      </div>
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-      <a
-        href="https://codepen.io/FreeCodeCamp/"
-        class="btn btn-show-all"
-        target="_blank"
-        >Show all<i class="fas fa-chevron-right"></i
-      ></a>
-    </section>
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
 
-    <!-- END PROJECTS SECTION -->
+    .skill {
+      background: #1e293b;
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
 
-    <!-- START CONTACT SECTION -->
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let's work together...</h2>
-        <p>How do you take your coffee?</p>
-      </div>
-      <div class="contact-links">
-        <a
-          href="https://facebook.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-facebook-square"></i> Facebook</a
-        >
-        <a
-          id="profile-link"
-          href="https://github.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://twitter.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-twitter"></i> Twitter</a
-        >
-        <a href="/cdn-cgi/l/email-protection#3b5e435a564b575e7b5e435a564b575e15585456" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="tel:555-555-5555" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
-      </div>
-    </section>
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
 
-    <!-- END CONTACT SECTION -->
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-    <!-- START FOOTER SECTION -->
+    .card h3 {
+      margin-top: 0;
+    }
 
-    <footer>
-      <p>
-        **This is just a fake portfolio. All the projects and contact details
-        given are not real.
-      </p>
-      <p>
-        &copy; Created for
-        <a href="https://www.freecodecamp.com/" target="_blank"
-          >freeCodeCamp <i class="fab fa-free-code-camp"></i
-        ></a>
-      </p>
-    </footer>
+    .contact {
+      text-align: center;
+    }
 
-    <!-- END FOOTER SECTION -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="about">
+  <h1>Hi, I'm Erick</h1>
+  <p>Data Analyst | Power BI | Python | Azure</p>
+  <p>I build data-driven solutions and explore how AI and analytics improve decision-making in business and finance.</p>
+</section>
+
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">SQL</div>
+    <div class="skill">Power BI</div>
+    <div class="skill">Azure Databricks</div>
+    <div class="skill">Data Analysis</div>
+    <div class="skill">Data Visualisation</div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Customer Insights Dashboard</h3>
+      <p>Analysed customer data to identify trends and improve business decisions.</p>
+      <p><strong>Tools:</strong> Power BI, SQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Stock Market Analysis</h3>
+      <p>Explored stock trends and volatility using financial datasets.</p>
+      <p><strong>Tools:</strong> Python, Pandas</p>
+    </div>
+
+    <div class="card">
+      <h3>Azure Data Pipeline</h3>
+      <p>Built a pipeline to process large datasets using cloud technologies.</p>
+      <p><strong>Tools:</strong> Azure, Databricks</p>
+    </div>
+
+    <div class="card">
+      <h3>AI Data Assistant</h3>
+      <p>Created a simple AI tool to generate insights from datasets.</p>
+      <p><strong>Tools:</strong> Python, AI APIs</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
+  <a href="https://github.com/YOURNAME" target="_blank">GitHub</a>
+  <a href="https://linkedin.com/in/YOURNAME" target="_blank">LinkedIn</a>
+  <a href="mailto:your@email.com">Email</a>
+</section>
+
+<footer>
+  <p>© 2026 Erick | Data Analyst Portfolio</p>
+</footer>
+
+</body>
 </html>
